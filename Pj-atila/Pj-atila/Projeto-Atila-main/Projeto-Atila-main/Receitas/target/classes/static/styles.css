@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-color: #FFF8E1;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #FFB300;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #FF6F00;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #4E342E;
+    font-family: 'Lobster', cursive;
+}
+
+.destino-container {
+    background-color: #FFF;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add-receita-btn {
+    background-color: #FFB300;
+    color: #FFF;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.add-receita-btn:hover {
+    background-color: #FF6F00;
+    transform: scale(1.05);
+}
+
+.form-container {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #4E342E;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #FFB300;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #FFB300;
+    color: #FFF;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #FF6F00;
+    transform: scale(1.05);
+}
+
+h3 {
+    color: #4E342E;
+    font-size: 24px;
+}
+
+#recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.recipe-item {
+    background-color: #FFF;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 300px; /* Largura fixa para os cards */
+    transition: transform 0.3s;
+}
+
+.recipe-item:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.recipe-item h3 {
+    color: #4E342E;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #28a745; /* Verde */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838; /* Verde escuro */
+}
+
+/* Estilização do botão de excluir */
+.btn-excluir {
+    background-color: red; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto branca */
+    padding: 10px 15px; /* Preenchimento do botão */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.btn-excluir:hover {
+    background-color: darkred; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilização do rodapé, se necessário */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #DED8AD;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .recipe-item {
+        width: 100%; /* Largura total em telas menores */
+        margin: 10px 0; /* Margem vertical */
+    }
+
+    .add-receita-btn, button[type="submit"] {
+        width: 100%; /* Botões ocupam a largura total */
+    }
+}
+
+#feedback-message {
+    margin: 20px;
+    padding: 10px;
+    background-color: #FFB300;
+    color: #FFF;
+    border-radius: 5px;
+    text-align: center;
+}

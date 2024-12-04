@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Receitas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Minhas Receitas</h1>
+    </header>
+    <div class="destino-container">
+        <button class="add-receita-btn" onclick="toggleForm()">Adicionar Receita</button>
+        <div class="form-container" id="form-container" style="display: none;">
+            <h2>Adicionar Receita</h2>
+            <form id="recipe-form">
+                <label for="title">Nome da Receita:</label>
+                <input type="text" id="title" required>
+
+                <label for="description">Descrição:</label>
+                <textarea id="description" rows="5" required></textarea>
+
+                <label for="url">URL da Receita:</label>
+                <input type="text" id="url" required>
+
+                <button type="submit">Adicionar Receita</button>
+            </form>
+        </div>
+    </div>
+    <div id="recipe-list"></div>
+    <div id="feedback-message" style="display:none;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

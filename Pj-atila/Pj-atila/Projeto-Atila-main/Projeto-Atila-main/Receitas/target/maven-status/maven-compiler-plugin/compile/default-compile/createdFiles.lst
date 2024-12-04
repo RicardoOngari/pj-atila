@@ -1,0 +1,5 @@
+com\Projeto\Receitas\dto\RecipeDto.class
+com\Projeto\Receitas\controller\RecipeController.class
+com\Projeto\Receitas\repository\RecipeRepository.class
+com\Projeto\Receitas\ReceitasApplication.class
+com\Projeto\Receitas\model\Recipe.class
